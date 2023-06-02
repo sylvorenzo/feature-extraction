@@ -39,10 +39,7 @@ def generate_face_feature_filters():
         for scale in scales:
             kernel = cv2.getGaborKernel((31, 31), scale, theta, 10.0, 0.5, 0.2, ktype=cv2.CV_32F)
             filters.append(kernel)
-
     return filters
-
-
 
 image_path = "Subset/000051.jpg" #add image path 
 
