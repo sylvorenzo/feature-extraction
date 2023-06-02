@@ -40,24 +40,6 @@ def generate_face_feature_filters():
             kernel = cv2.getGaborKernel((31, 31), scale, theta, 10.0, 0.5, 0.2, ktype=cv2.CV_32F)
             filters.append(kernel)
 
-    # Mouth and lip detection filters
-    # orientations = [0, 45, 90, 135]
-    # scales = [0.5, 1.0, 1.5]
-    # for theta in orientations:
-    #     theta *= np.pi / 180
-    #     for scale in scales:
-    #         kernel = cv2.getGaborKernel((31, 31), scale, theta, 10.0, 0.5, 0, ktype=cv2.CV_32F)
-    #         filters.append(kernel)
-
-    # Face shape filter using Gabor filter
-    # theta = 90 * np.pi / 180
-    # scales = [0.5, 1.0, 1.5]
-    # for scale in scales:
-    #     kernel = cv2.getGaborKernel((31, 31), scale, theta, 10.0, 0.5, 0, ktype=cv2.CV_32F)
-    #     filters.append(kernel)
-
-      
-
     return filters
 
 
